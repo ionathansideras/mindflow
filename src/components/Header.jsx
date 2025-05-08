@@ -86,7 +86,7 @@ export default function Header() {
                 <Button
                     onClick={toggleNavigation}
                     className="ml-auto lg:hidden"
-                    px={3}
+                    px="px-3"
                 >
                     <MenuSvg openNavigation={open} />
                 </Button>
