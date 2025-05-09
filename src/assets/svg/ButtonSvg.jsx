@@ -14,7 +14,7 @@ const ButtonSvg = (white) => (
             />
         </svg>
 
-        <svg
+        {/* <svg
             className="absolute top-0 left-[20px] w-[calc(100%-40.2px)]"
             height="44"
             viewBox="0 0 100 44"
@@ -26,9 +26,9 @@ const ButtonSvg = (white) => (
                 fillRule="nonzero"
                 points="100 0 100 2 0 2 0 0"
             />
-        </svg>
+        </svg> */}
 
-        <svg
+        {/* <svg
             className="absolute top-0 left-[20px] w-[calc(100%-40.2px)]"
             height="44"
             viewBox="0 0 100 44"
@@ -40,7 +40,7 @@ const ButtonSvg = (white) => (
                 fillRule="nonzero"
                 points="100 42 100 44 0 44 0 42"
             />
-        </svg>
+        </svg> */}
 
         <svg
             className="absolute top-0 right-0"
