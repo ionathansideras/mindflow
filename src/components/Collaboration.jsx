@@ -88,6 +88,28 @@ const Collaboration = () => {
                     </div>
                 </div>
             </div>
+            {/* this is how we can make a clockwise rotation */}
+            {/* <div
+                className={`relative ml-20 w-[170px] h-[170px] bg-amber-800 flex justify-center`}
+            >
+                <div className="flex items-center justify-center w-full h-full">
+                    <img
+                        src={brainwaveSymbol}
+                        width={48}
+                        height={48}
+                        alt="mindflow"
+                    />
+                </div>
+                {collabApps.map((app, index) => (
+                    <div className={`absolute h-full rotate-${index * 45}`}>
+                        <div
+                            className={`relative w-[2rem] h-[2rem] bg-n-1 border border-n-3/20 rounded-xl rotate-${
+                                index * 45
+                            }`}
+                        ></div>
+                    </div>
+                ))}
+            </div> */}
         </Section>
     );
 };
