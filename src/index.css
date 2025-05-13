@@ -11,65 +11,69 @@
 }
 
 @theme {
-    /* colors */
-    --color-1: #ac6aff;
-    --color-2: #ffc876;
-    --color-3: #ff776f;
-    --color-4: #7adb78;
-    --color-5: #858dff;
-    --color-6: #ff98e2;
+    /* Colors */
+    --color-color-1: #ac6aff;
+    --color-color-2: #ffc876;
+    --color-color-3: #ff776f;
+    --color-color-4: #7adb78;
+    --color-color-5: #858dff;
+    --color-color-6: #ff98e2;
 
-    --stroke-1: #26242c;
+    --color-stroke-1: #26242c; /* Assuming stroke is a color for borders, etc. */
 
-    --n-1: #ffffff;
-    --n-2: #cac6dd;
-    --n-3: #ada8c3;
-    --n-4: #757185;
-    --n-5: #3f3a52;
-    --n-6: #252134;
-    --n-7: #15131d;
-    --n-8: #0e0c15;
-    --n-9: #474060;
-    --n-10: #43435c;
-    --n-11: #1b1b2e;
-    --n-12: #2e2a41;
-    --n-13: #6c7275;
+    --color-n-1: #ffffff;
+    --color-n-2: #cac6dd;
+    --color-n-3: #ada8c3;
+    --color-n-4: #757185;
+    --color-n-5: #3f3a52;
+    --color-n-6: #252134;
+    --color-n-7: #15131d;
+    --color-n-8: #0e0c15;
+    --color-n-9: #474060;
+    --color-n-10: #43435c;
+    --color-n-11: #1b1b2e;
+    --color-n-12: #2e2a41;
+    --color-n-13: #6c7275;
 
-    /* fonts (copy your fallback stack if you need it) */
-    --font-sans: var(--font-sora), ui-sans-serif, system-ui;
-    --font-code: var(--font-code);
-    --font-grotesk: var(--font-grotesk);
+    /* Font Families */
+    --font-sans: "var(--font-sora)", sans-serif; /* Use the CSS variable defined below */
+    --font-code: "var(--font-code)"; /* Use the CSS variable defined below */
+    --font-grotesk: "var(--font-grotesk)"; /* Use the CSS variable defined below */
+    /* Define the actual font names as simple CSS variables */
+    --font-sora: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-grotesk: "Space Grotesk", sans-serif;
 
-    /* letter-spacing */
+    /* Letter Spacing */
     --letter-spacing-tagline: 0.15em;
 
-    /* spacing */
-    --spacing-0.25: 0.0625rem;
-    --spacing-7.5: 1.875rem;
+    /* Spacing */
+    --spacing-0-25: 0.0625rem;
+    --spacing-7-5: 1.875rem;
     --spacing-15: 3.75rem;
 
-    /* opacity */
+    /* Opacity */
     --opacity-15: 0.15;
 
-    /* transitions */
-    --transition-duration-default: 200ms;
-    --transition-timing-function-default: linear;
+    /* Transition Duration */
+    --transition-duration-DEFAULT: 200ms;
 
-    /* z-index */
+    /* Transition Timing Function */
+    --transition-timing-function-DEFAULT: linear;
+
+    /* Z-Index */
     --z-index-1: 1;
     --z-index-2: 2;
     --z-index-3: 3;
     --z-index-4: 4;
     --z-index-5: 5;
 
-    /* border */
-    --border-width-default: 0.0625rem;
+    /* Border Width */
+    --border-width-DEFAULT: 0.0625rem;
 
-    /* background-images */
-    --background-image-radial-gradient: radial-gradient(
-        var(--tw-gradient-stops)
-    );
-    --background-image-conic-gradient: conic-gradient(
+    /* Background Images */
+    --image-radial-gradient: radial-gradient(var(--tw-gradient-stops));
+    --image-conic-gradient: conic-gradient(
         from 225deg,
         #ffc876,
         #79fff7,
@@ -77,73 +81,89 @@
         #ff98e2,
         #ffc876
     );
-    --background-image-benefit-card-1: url(assets/benefits/card-1.svg);
-    --background-image-benefit-card-2: url(assets/benefits/card-2.svg);
-    --background-image-benefit-card-3: url(assets/benefits/card-3.svg);
-    --background-image-benefit-card-4: url(assets/benefits/card-4.svg);
-    --background-image-benefit-card-5: url(assets/benefits/card-5.svg);
-    --background-image-benefit-card-6: url(assets/benefits/card-6.svg);
+    --image-benefit-card-1: url(assets/benefits/card-1.svg);
+    --image-benefit-card-2: url(assets/benefits/card-2.svg);
+    --image-benefit-card-3: url(assets/benefits/card-3.svg);
+    --image-benefit-card-4: url(assets/benefits/card-4.svg);
+    --image-benefit-card-5: url(assets/benefits/card-5.svg);
+    --image-benefit-card-6: url(assets/benefits/card-6.svg);
 }
+
+* {
+    scroll-behavior: smooth;
+}
+
+/*
+  This file should be imported into your main CSS file,
+  which also includes @import "tailwindcss";
+*/
 
 @layer components {
     .container {
         @apply max-w-[77.5rem] mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem];
     }
+
     .h1 {
-        @apply font-semibold text-[2.5rem] leading-[3.25rem]
-      md:text-[2.75rem] md:leading-[3.75rem]
-      lg:text-[3.25rem] lg:leading-[4.0625rem]
-      xl:text-[3.75rem] xl:leading-[4.5rem];
+        @apply font-semibold text-[2.5rem] leading-[3.25rem] md:text-[2.75rem] md:leading-[3.75rem] lg:text-[3.25rem] lg:leading-[4.0625rem] xl:text-[3.75rem] xl:leading-[4.5rem];
     }
+
     .h2 {
-        @apply text-[1.75rem] leading-[2.5rem]
-      md:text-[2rem] md:leading-[2.5rem]
-      lg:text-[2.5rem] lg:leading-[3.5rem]
-      xl:text-[3rem] xl:leading-tight;
+        @apply text-[1.75rem] leading-[2.5rem] md:text-[2rem] md:leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-tight;
     }
+
     .h3 {
         @apply text-[2rem] leading-normal md:text-[2.5rem];
     }
+
     .h4 {
         @apply text-[2rem] leading-normal;
     }
+
     .h5 {
         @apply text-2xl leading-normal;
     }
+
     .h6 {
         @apply font-semibold text-lg leading-8;
     }
+
     .body-1 {
-        @apply text-[0.875rem] leading-[1.5rem]
-      md:text-[1rem] md:leading-[1.75rem]
-      lg:text-[1.25rem] lg:leading-8;
+        @apply text-[0.875rem] leading-[1.5rem] md:text-[1rem] md:leading-[1.75rem] lg:text-[1.25rem] lg:leading-8;
     }
+
     .body-2 {
         @apply font-light text-[0.875rem] leading-6 md:text-base;
     }
+
     .caption {
         @apply text-sm;
     }
+
     .tagline {
-        @apply font-grotesk font-light text-xs tracking-tagline uppercase;
+        @apply font-grotesk font-light text-xs uppercase;
+        letter-spacing: var(--letter-spacing-tagline);
     }
+
     .quote {
         @apply font-code text-lg leading-normal;
     }
+
     .button {
         @apply font-code text-xs font-bold uppercase tracking-wider;
     }
 }
 
+/*
+  This file should be imported into your main CSS file,
+  which also includes @import "tailwindcss";
+*/
+
 @layer utilities {
     .tap-highlight-color {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     }
-    .bg-radial-gradient {
-        background-image: radial-gradient(var(--tw-gradient-stops));
-    }
-    .bg-conic-gradient {
-        background-image: conic-gradient(var(--tw-gradient-stops));
+    .bg-conic {
+        background-image: var(--image-conic-gradient);
     }
 }
 
