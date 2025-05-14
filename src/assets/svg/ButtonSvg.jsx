@@ -13,35 +13,34 @@ const ButtonSvg = (white) => (
                 d="M21,43.00005 L8.11111,43.00005 C4.18375,43.00005 1,39.58105 1,35.36365 L1,8.63637 C1,4.41892 4.18375,1 8.11111,1 L21,1"
             />
         </svg>
-
-        {/* <svg
-            className="absolute top-0 left-[20px] w-[calc(100%-40.2px)]"
+        <svg
+            className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
             height="44"
             viewBox="0 0 100 44"
             preserveAspectRatio="none"
             fill={white ? "white" : "none"}
         >
-            <polygon
-                fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
-                fillRule="nonzero"
-                points="100 0 100 2 0 2 0 0"
-            />
-        </svg> */}
-
-        {/* <svg
-            className="absolute top-0 left-[20px] w-[calc(100%-40.2px)]"
-            height="44"
-            viewBox="0 0 100 44"
-            preserveAspectRatio="none"
-            fill={white ? "white" : "none"}
-        >
-            <polygon
-                fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
-                fillRule="nonzero"
-                points="100 42 100 44 0 44 0 42"
-            />
-        </svg> */}
-
+            {white ? (
+                <polygon
+                    fill="white"
+                    fillRule="nonzero"
+                    points="100 0 100 44 0 44 0 0"
+                />
+            ) : (
+                <>
+                    <polygon
+                        fill="url(#btn-top)" // mentioned in ButtonGradient.jsx
+                        fillRule="nonzero"
+                        points="100 42 100 44 0 44 0 42"
+                    />
+                    <polygon
+                        fill="url(#btn-bottom)" // mentioned in ButtonGradient.jsx
+                        fillRule="nonzero"
+                        points="100 0 100 2 0 2 0 0"
+                    />
+                </>
+            )}
+        </svg>
         <svg
             className="absolute top-0 right-0"
             width="21"
