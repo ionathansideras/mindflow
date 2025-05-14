@@ -11,7 +11,7 @@ const Benefits = () => {
             <div className="container relative z-2">
                 <Heading
                     className="md:max-w-md lg:max-w-2xl"
-                    title="Chat Smarter, Not Harder with MindFlow"
+                    title="Chat Smarter, Not Harder with Brainwave"
                 />
 
                 <div className="flex flex-wrap justify-center gap-10 mb-10">

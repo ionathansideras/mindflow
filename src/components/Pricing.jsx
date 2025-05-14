@@ -28,7 +28,7 @@ export default function Pricing() {
                 </div>
 
                 <Heading
-                    tag="Get started with MindFlow"
+                    tag="Get started with Brainwave"
                     title="Pay once, use forever"
                 />
 

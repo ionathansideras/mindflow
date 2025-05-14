@@ -52,7 +52,7 @@ const Collaboration = () => {
                                         src={brainwaveSymbol}
                                         width={48}
                                         height={48}
-                                        alt="mindflow"
+                                        alt="Brainwave"
                                     />
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const Collaboration = () => {
                         src={brainwaveSymbol}
                         width={48}
                         height={48}
-                        alt="mindflow"
+                        alt="Brainwave"
                     />
                 </div>
                 {collabApps.map((app, index) => (
