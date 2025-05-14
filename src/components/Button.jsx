@@ -5,7 +5,7 @@ const Button = ({ className, href, onClick, children, px, white }) => {
     const classes = twMerge(
         `button relative inline-flex cursor-pointer items-center justify-center h-11 transition-colors hover:text-color-1 ${
             px || "px-7"
-        } ${white ? "text-n-8" : "text-n-1"}`,
+        } text-n-1`,
         className
     );
 
