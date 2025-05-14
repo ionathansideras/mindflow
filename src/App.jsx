@@ -6,7 +6,7 @@ import Collaboration from "./components/Collaboration";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
-import Roadmap from "./components/RoadMap";
+import Roadmap from "./components/Roadmap";
 
 function App() {
     return (
