@@ -12,7 +12,7 @@ import {
 
 export default function Services() {
     return (
-        <Section className="container" id="how-to-use">
+        <Section id="how-to-use">
             <div className="container">
                 <Heading
                     title="Generative AI made for Creators."
