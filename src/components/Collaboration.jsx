@@ -21,6 +21,7 @@ const Collaboration = () => {
                                         src={check}
                                         width={24}
                                         height={24}
+                                        loading="lazy"
                                         alt="check"
                                     />
                                     <h6 className="body-2 ml-5">
@@ -53,6 +54,7 @@ const Collaboration = () => {
                                         width={48}
                                         height={48}
                                         alt="Brainwave"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>
@@ -77,6 +79,7 @@ const Collaboration = () => {
                                             height={app.height}
                                             alt={app.title}
                                             src={app.icon}
+                                            loading="lazy"
                                         />
                                     </div>
                                 </li>

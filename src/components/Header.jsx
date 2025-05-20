@@ -43,6 +43,7 @@ export default function Header() {
                         width={190}
                         height={40}
                         alt="Brainwave"
+                        loading="eager"
                     />
                 </a>
 

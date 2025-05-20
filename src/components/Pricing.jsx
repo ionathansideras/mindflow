@@ -14,6 +14,7 @@ export default function Pricing() {
                         className="relative z-1"
                         width={255}
                         height={255}
+                        loading="lazy"
                         alt="Sphere"
                     />
                     <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
@@ -23,6 +24,7 @@ export default function Pricing() {
                             width={950}
                             height={400}
                             alt="Stars"
+                            loading="lazy"
                         />
                     </div>
                 </div>

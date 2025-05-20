@@ -31,6 +31,7 @@ export default function Hero() {
                                 width={624}
                                 height={28}
                                 alt="curve"
+                                loading="eager"
                             />
                         </span>
                     </h1>
@@ -55,6 +56,7 @@ export default function Hero() {
                                     width={1024}
                                     height={490}
                                     alt="AI"
+                                    loading="eager"
                                 />
 
                                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
@@ -71,6 +73,7 @@ export default function Hero() {
                                                     width={24}
                                                     height={25}
                                                     alt={icon}
+                                                    loading="eager"
                                                 />
                                             </li>
                                         ))}
@@ -93,6 +96,7 @@ export default function Hero() {
                             width={1440}
                             height={1800}
                             alt="hero"
+                            loading="eager"
                         />
                     </div>
                     <BackgroundCircles />

@@ -30,6 +30,7 @@ export default function Services() {
                                 alt="smartest ai"
                                 width={800}
                                 height={730}
+                                loading="lazy"
                             />
                         </div>
                         <div className="relative z-1 max-w-[17rem] ml-auto">
@@ -48,6 +49,8 @@ export default function Services() {
                                             width={24}
                                             height={24}
                                             src={check}
+                                            alt="check"
+                                            loading="lazy"
                                         />
                                         <p className="ml-4">{item}</p>
                                     </li>
@@ -65,6 +68,7 @@ export default function Services() {
                                     width={630}
                                     height={750}
                                     alt="robot"
+                                    loading="lazy"
                                 />
                             </div>
 
@@ -110,6 +114,7 @@ export default function Services() {
                                                         width={24}
                                                         height={24}
                                                         alt={item}
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             </li>
@@ -125,6 +130,7 @@ export default function Services() {
                                     width={520}
                                     height={400}
                                     alt="Scary robot"
+                                    loading="lazy"
                                 />
 
                                 <VideoChatMessage />
